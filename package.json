@@ -1,0 +1,32 @@
+{
+  "version": "0.0.2",
+  "description": "AcornQuest",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "build": "tsc",
+    "start": "node index.js",
+    "test": "jest",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "precommit": "lint-staged",
+    "postinstall": "husky install",
+    "test-sample": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bull-board/api": "^5.15.3",
+    "typescript": "^5.1.3",
+    "puppeteer": "21.6.1",
+    "@bull-board/express": "^5.15.3",
+    "@pontem/liquidswap-sdk": "^0.7.0",
+    "nestjs-console": "^9.0.0",
+    "express-basic-auth": "^1.2.1",
+    "dotenv": "^16.4.5",
+    "@sentry/profiling-node": "^7.108.0",
+    "eslint": "^8.42.0",
+    "@aptos-labs/ts-sdk": "^1.9.1"
+  }
+}
